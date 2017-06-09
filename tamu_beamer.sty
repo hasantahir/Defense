@@ -40,7 +40,7 @@
 \usepackage{calc}
 \usepackage{chemformula} % chemical formulas
 \usepackage{siunitx} % All the SI unit nomenclature
-  \sisetup{per=slash, load=abbr, output-complex-root = j, complex-root-position = before-number, round-mode=figures,round-precision=4}
+  \sisetup{per=slash, load=abbr, output-complex-root = j, complex-root-position = before-number, round-mode=figures,round-precision=2}
 % \usepackage{systeme} % For system of equations
 
 
@@ -73,12 +73,12 @@ colframe=red,colback=white,arc=0pt,boxrule=1pt}}
 %%%%%%%%%%
 % \usepackage[caption=false,font=scriptsize,labelfont=sf,textfont=sf]{subfig}
 \usepackage{subfig}
-% \usepackage[skip=6pt]{caption}
+\usepackage[skip=6pt]{caption}
 \usepackage[]{caption}
-% \captionsetup[figure]{labelfont=scriptsize,
-%                       textfont=scriptsize}
-% \captionsetup[subfigure]{labelfont=scriptsize,
-%                          textfont=scriptsize}
+\captionsetup[figure]{labelfont=scriptsize,
+                      textfont=scriptsize}
+\captionsetup[subfigure]{labelfont=scriptsize,
+                         textfont=scriptsize}
 % \ifCLASSOPTIONcompsoc
 \usepackage{etoolbox}
 

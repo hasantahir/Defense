@@ -1,4 +1,4 @@
-\documentclass[mathserif,18pt,xcolor=table,c]{beamer}
+\documentclass[mathserif,16pt,xcolor=table]{beamer}
 
 % Load Beamer Style Theme
 % TAMU Based
@@ -112,7 +112,7 @@ bottom color=blue!50!black!20, draw=blue!40!black!60, very thick, text centered,
   \frametitle{Plasmonics Overview}
   % ----------------------------------------------------------
   \begin{columns} % align columns
-    \begin{column}{.5\textwidth}
+    \begin{column}{.5\textwidth} \vspace*{-1cm}
       \begin{outline}[itemize]
         \1 Interaction of electromagnetic (EM) waves with free electrons
         \1 Subwavelength localization of EM fields
@@ -124,11 +124,11 @@ bottom color=blue!50!black!20, draw=blue!40!black!60, very thick, text centered,
     \end{column}
     \begin{column}{.5\textwidth}
       % Use this to preserve fonts from Inkspace
-      \begin{figure}
-        \hspace*{-1cm}
-        % \vspace*{-2cm}
-        \def\svgwidth{1.2\linewidth}
-        \input{figures/scale.pdf_tex}
+      \begin{figure}[t!]
+        \centering \vspace*{-1.5cm} \hspace*{-0.5cm}
+        {\scalebox{.45}{\input{figures/scale.pdf_tex}}
+        % \resizebox{5in}{!}{\input{figures/mstruc_gated.pdf_tex}}
+        \label{fig:struct}}
         \caption{Communication Technologies at various frequencies}
       \end{figure}
       \end{column}%
@@ -153,7 +153,7 @@ bottom color=blue!50!black!20, draw=blue!40!black!60, very thick, text centered,
   % \framesubtitle{Optical frequency}
   % ----------------------------------------------------------
   \begin{columns} % align columns
-    \begin{column}{.5\textwidth}
+    \begin{column}{.4\textwidth}
       \begin{outline}[itemize]
         \1 Metal-dielectric interface
         \1 Surface plasmon polaritons (SPPs)
@@ -168,7 +168,7 @@ bottom color=blue!50!black!20, draw=blue!40!black!60, very thick, text centered,
         \1 Low efficiency
       \end{outline}
     \end{column}
-    \begin{column}{.5\textwidth}
+    \begin{column}{.6\textwidth}
       % Use this to preserve fonts from Inkspace
       \begin{figure}[b!]
         \hspace*{-1cm} \vspace*{0.5cm}
@@ -350,11 +350,11 @@ bottom color=blue!50!black!20, draw=blue!40!black!60, very thick, text centered,
           \item Accurate material description using Drude-critical points
         \end{itemize}
         \begin{equation} \nonumber
-          \E_2(\O) = \E_{\inf} - \frac{\O_{d}^{2}}{\O^2 + j\gamma \O} + \sum \limits_{i = 1}^N G_i(\O)
+          \E_2(\O) = \E_{\inf} - \frac{\O_{d}^{2}}{\O^2 + \j\gamma \O} + \sum \limits_{i = 1}^N G_i(\O)
           \label{eq:eps_drude_cp}
         \end{equation}
         \begin{equation} \nonumber
-          G_i(\O) = C_i \left[ \frac{e^{j \phi_i}}{\O_i - \O - j \Gamma_i} + \frac{e^{-j \phi_i}}{\O_i + \O + j \Gamma_i} \right]
+          G_i(\O) = C_i \left[ \frac{e^{j \phi_i}}{\O_i - \O - \j \Gamma_i} + \frac{e^{-\j \phi_i}}{\O_i + \O + \j \Gamma_i} \right]
           \label{eq:CP_terms}
         \end{equation}
       \end{column}
@@ -392,7 +392,140 @@ bottom color=blue!50!black!20, draw=blue!40!black!60, very thick, text centered,
 % ------------------------------------------------------------
 % ------------------------------------------------------------
 % ------------------------------------------------------------
+\begin{frame}
+  \frametitle{Background}
+  \framesubtitle{Two-dimensional Electon Gas (2DEG)}
+
+  \begin{columns} % align columns
+    \begin{column}{.5\textwidth}
+      \begin{minipage}[T][.1\textheight][c]{\linewidth}
+        \begin{itemize}
+          \item Semiconductor Heterostructure Interface
+          \item High concentration of free electrons
+          \item \textbf{Two-dimensional Surface waves}
+          \item Formation of Quantum Well
+          \begin{itemize}
+            \item[]{Two-dimensional confinement of electrons}
+          \end{itemize}
+        \end{itemize}
+      \end{minipage}
+      %
+    \end{column}
+    %
+    \begin{column}{.5\textwidth}
+      % Use this to preserve fonts from Inkspace
+      \begin{figure}
+        \def\svgwidth{\linewidth}
+        \input{figures/hemt.pdf_tex}
+        \caption{Typical GaAs/AlGaAs HEMT}
+      \end{figure}
+      \end{column}%
+    \end{columns}
+  \end{frame}
 % ------------------------------------------------------------
+% ------------------------------------------------------------
+% ------------------------------------------------------------
+% ------------------------------------------------------------
+% ------------------------------------------------------------
+% ------------------------------------------------------------
+% ------------------------------------------------------------
+% ------------------------------------------------------------
+\begin{frame}
+  \frametitle{Background}
+  \framesubtitle{2DEG (contd.)}
+
+  \begin{columns} % align columns
+    \begin{column}{.5\textwidth}
+      \begin{minipage}[T][.1\textheight][c]{\linewidth}
+        \begin{itemize}
+          \item Plasma waves in 2DEG
+          \item Dyakonov-Shur instability
+          \begin{itemize}
+            \item[-]{Voltage bias at source and drain terminals}
+            \item[-]{Plasma resonance}
+            \item[-]{Emission of terahertz radiation}
+            \item[-]{External radiation detection}
+          \end{itemize}
+          \item \emph{Electronic Flute}
+          \item Tunable resonance with gate voltage
+          \item Shallow water waves
+          \begin{itemize}
+            \item[-]{\color{red}Surface waves}
+          \end{itemize}
+        \end{itemize}
+      \end{minipage}
+      %
+    \end{column}
+    %
+    \begin{column}{.5\textwidth}
+      % Use this to preserve fonts from Inkspace
+      \begin{figure}
+        \def\svgwidth{\linewidth}
+        \input{figures/flute_2deg.pdf_tex}
+        % \caption{Typical GaAs/AlGaAs HEMT}
+      \end{figure}
+      \begin{equation} \nonumber
+        \begin{split}
+          \lambda &= \frac{c}{f} \\
+          & \Longrightarrow  300 \u \mathrm{m}
+        \end{split}
+        \label{eq:disp_TE_two}
+      \end{equation}
+      \end{column}%
+    \end{columns}
+  \end{frame}
+% ------------------------------------------------------------
+% ------------------------------------------------------------
+% ------------------------------------------------------------
+% ------------------------------------------------------------
+% ------------------------------------------------------------
+% ------------------------------------------------------------
+% -------------------THEORY-----------------------------------
+% ------------------------------------------------------------
+% ------------------------------------------------------------
+% ------------------------------------------------------------
+% ------------------------------------------------------------
+% ------------------------------------------------------------
+% ------------------------------------------------------------
+% ------------------------------------------------------------
+% ------------------------------------------------------------
+% ------------------------------------------------------------
+% Beginning of the actual content
+\section{Theory}
+\begin{frame}
+  \frametitle{Theory}
+  \framesubtitle{2DEG formation}
+  \begin{columns} % align columns
+    \begin{column}{.5\textwidth}
+      \begin{minipage}[T][.1\textheight][c]{\linewidth}
+        \begin{itemize}
+          \item Interface of two slightly different semiconductors/insulators
+          \item High electron concentration ($\sim 10^{12}-10^{14} cm^{-2}$)
+          \item Triangular quantum well
+          \begin{itemize}
+            \item[]{Entrapment of electrons in transverse direction}
+            \item[]{Free lateral movement}
+          \end{itemize}
+        \end{itemize}
+      \end{minipage}
+      %
+    \end{column}
+    %
+    \begin{column}{.5\textwidth}
+      % Use this to preserve fonts from Inkspace
+      \begin{figure}
+        \vspace*{-1cm}
+        \def\svgwidth{\linewidth}
+        \input{figures/2deg_bandgap.pdf_tex}
+        \caption{Band diagram of a GaAs/AlGaAs heterostructure}
+      \end{figure}
+      \begin{itemize}
+        \item[]{\makebox[.5cm][l]{$E_c$} - Conduction band edge}
+        \item[]{\makebox[.5cm][l]{$E_f$} - Fermi level}
+      \end{itemize}
+      \end{column}%
+    \end{columns}
+  \end{frame}
 % ------------------------------------------------------------
 % ------------------------------------------------------------
 % ------------------------------------------------------------

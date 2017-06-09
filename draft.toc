@@ -3,4 +3,5 @@
 \beamer@sectionintoc {3}{Overview}{4}{0}{3}
 \beamer@sectionintoc {4}{Background}{5}{0}{4}
 \beamer@sectionintoc {5}{Background}{5}{0}{5}
-\beamer@sectionintoc {6}{Conclusion}{15}{0}{6}
+\beamer@sectionintoc {6}{Theory}{11}{0}{6}
+\beamer@sectionintoc {7}{Conclusion}{18}{0}{7}
