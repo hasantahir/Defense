@@ -1,7 +1,15 @@
 \ProvidesPackage{tamu_beamer}
 
 
-
+%%%%%%%%%%
+%%%%%%%%%% Define colors
+%%%%%%%%%%
+\definecolor{tamumaroon}{RGB}{80,0,0}
+\definecolor{tamublack}{RGB}{51,44,44}
+\definecolor{tamugray}{RGB}{143,143,140}
+\definecolor{tamumustard}{RGB}{244,175,0}
+\definecolor{tamugreen}{RGB}{126,122,0}
+\definecolor{tamuolive}{RGB}{79,85,42}
 
 
 
@@ -50,10 +58,11 @@
 %%%%%%%%%% GRAPHICS
 %%%%%%%%%%
 \usepackage{pgfplots}
+\usepackage{setspace}
 \usepackage{graphicx}
 \usepackage{tikz}
 \tikzset{
-font={\fontsize{9pt}{9}\selectfont}}
+font={\fontsize{6pt}{7}\selectfont}}
 \usepackage{tikzscale} % Scale the figure not the font
 \usepackage{textpos}
 \usepackage{standalone}
@@ -73,7 +82,7 @@ colframe=red,colback=white,arc=0pt,boxrule=1pt}}
 %%%%%%%%%%
 % \usepackage[caption=false,font=scriptsize,labelfont=sf,textfont=sf]{subfig}
 \usepackage{subfig}
-\usepackage[skip=6pt]{caption}
+% \usepackage[skip=6pt]{caption}
 \usepackage[]{caption}
 \captionsetup[figure]{labelfont=scriptsize,
                       textfont=scriptsize}
@@ -81,6 +90,8 @@ colframe=red,colback=white,arc=0pt,boxrule=1pt}}
                          textfont=scriptsize}
 % \ifCLASSOPTIONcompsoc
 \usepackage{etoolbox}
+\setlength{\abovedisplayshortskip}{2pt}
+\setlength{\belowdisplayshortskip}{-7pt}
 
 
 
@@ -90,6 +101,7 @@ colframe=red,colback=white,arc=0pt,boxrule=1pt}}
 %%%%%%%%%%
 %%%%%%%%%% Theme configuration
 %%%%%%%%%%
+\setbeamertemplate{itemize items}[square]
 \mode<presentation>
 {
 % \usetheme{Pittsburgh}
@@ -99,7 +111,8 @@ colframe=red,colback=white,arc=0pt,boxrule=1pt}}
 % Exclude Default Navigation tools
 \setbeamercovered{invisible}
 \setbeamertemplate{navigation symbols}{}
-\addtobeamertemplate{frametitle}{\vskip+2ex}{}
+\setbeamertemplate{itemize items}[square]
+% \addtobeamertemplate{frametitle}{\vskip-2ex}{} % Change this if you want to play with the vertical position of the frametitle
 \usepackage{datetime} % Insert date and time
 
 %%%%%%%%%%
@@ -109,7 +122,7 @@ colframe=red,colback=white,arc=0pt,boxrule=1pt}}
 \setbeamercolor{normal text}{bg=white,fg=tamublack}
 \setbeamercolor{structure}{fg=tamumaroon}
 \setbeamercolor{alerted text}{fg=red!85!black}
-\setbeamercolor{item projected}{use=item,fg=black,bg=item.fg!35}
+\setbeamercolor{item projected}{use=item,fg=tamumaroon,bg=tamumaroon}
 \setbeamercolor*{palette primary}{use=structure,fg=white, bg=tamumaroon}
 \setbeamercolor*{palette secondary}{use=structure,bg=tamugray}
 \setbeamercolor*{palette tertiary}{use=structure,bg=tamugreen}
@@ -151,9 +164,16 @@ colframe=red,colback=white,arc=0pt,boxrule=1pt}}
 \end{beamercolorbox}}%
 \vskip0pt%
 
-}
-\makeatother
+% \g@addto@macro\normalsize{%
+%   \setlength\abovedisplayskip{40pt}
+%   \setlength\belowdisplayskip{40pt}
+%   \setlength\abovedisplayshortskip{40pt}
+%   \setlength\belowdisplayshortskip{40pt}
 %
+% }
+}
+% \makeatother
+% %
 % \makeatletter
 % \g@addto@macro\normalsize{%
 %   \setlength\abovedisplayskip{40pt}
@@ -172,15 +192,7 @@ colframe=red,colback=white,arc=0pt,boxrule=1pt}}
 \pgfdeclareimage[height=0.6cm]{tamu}{figures/TAM-Wordmark}
 \pgfdeclareimage[height=1.5cm]{tamustack}{figures/TAM-Stack}
 
-%%%%%%%%%%
-%%%%%%%%%% Define colors
-%%%%%%%%%%
-\definecolor{tamumaroon}{RGB}{80,0,0}
-\definecolor{tamublack}{RGB}{51,44,44}
-\definecolor{tamugray}{RGB}{143,143,140}
-\definecolor{tamumustard}{RGB}{244,175,0}
-\definecolor{tamugreen}{RGB}{126,122,0}
-\definecolor{tamuolive}{RGB}{79,85,42}
+
 
 
 
@@ -235,5 +247,7 @@ colframe=red,colback=white,arc=0pt,boxrule=1pt}}
 \renewcommand{\^}{\hat}  % unit vector
 \newcommand*\diff{\mathop{}\!\mathrm{d}} % Define differential operator
 \newcommand{\e}{\mathrm{e}} % Straight-up exponential
-\renewcommand{\j}{\mathrm{j}\mkern1mu} % Straight-up exponential
+\renewcommand{\j}{{j}\mkern1mu} % Straight-up exponential
 \newcommand{\iu}{\mathrm{i}\mkern1mu}
+
+\newcommand\ddfrac[2]{\frac{\displaystyle #1}{\displaystyle #2}}

@@ -10,22 +10,18 @@
 \begin{tikzpicture}
 
 \begin{axis}[%
-width=4.521in,
-height=3.566in,
-at={(0.758in,0.481in)},
-scale only axis,
 xmin=188,
 xmax=1000,
 xlabel={Wavelength ($\si{\nano \metre}$)},
 ymin=-60,
 ymax=10,
 ylabel={$\E(\O)$},
-x label style={at={(axis description cs:0.5,-0.05)},anchor=north},
-y label style={at={(axis description cs:-0.05,.5)}},
+x label style={at={(axis description cs:0.5,0.06)}},
+y label style={at={(axis description cs:0.15,.5)}},
 axis background/.style={fill=white},
-legend style={at={(0.97,0.03)}, anchor=south east, legend cell align=left, align=left, draw=white!15!black}
+legend style={at={(0.01,0.03)}, anchor=south west, legend cell align=left, align=left, draw=white!15!black}
 ]
-\addplot [color=mycolor1, line width=1.4pt]
+\addplot [color=mycolor1, line width=1.2pt]
   table[row sep=crcr]{%
 3000	-480.944007922249\\
 2958.53899308983	-467.723893280867\\
@@ -1030,7 +1026,7 @@ legend style={at={(0.97,0.03)}, anchor=south east, legend cell align=left, align
 };
 \addlegendentry{$\Re \mathrm{\E(\O)}$}
 
-\addplot [color=mycolor2, line width=1.4pt]
+\addplot [color=mycolor2, line width=1.2pt]
   table[row sep=crcr]{%
 3000	35.2478120049244\\
 2958.53899308983	33.8075705948983\\
@@ -2035,7 +2031,7 @@ legend style={at={(0.97,0.03)}, anchor=south east, legend cell align=left, align
 };
 \addlegendentry{$\Im \E(\O)$}
 
-\addplot [color=mycolor1, draw=none, mark size=2.5pt, mark=o, mark options={solid, mycolor1}, forget plot]
+\addplot [color=mycolor1, draw=none, mark size=1.5pt, mark=o, mark options={solid, mycolor1}, forget plot]
   table[row sep=crcr]{%
 187.9	-0.324044\\
 191.6	-0.307824\\
@@ -2087,7 +2083,7 @@ legend style={at={(0.97,0.03)}, anchor=south east, legend cell align=left, align
 1610	-140.4\\
 1937	-198.1888\\
 };
-\addplot [color=mycolor2, draw=none, mark size=1.8pt, mark=square, mark options={solid, mycolor2}, forget plot]
+\addplot [color=mycolor2, draw=none, mark size=1.2pt, mark=square, mark options={solid, mycolor2}, forget plot]
   table[row sep=crcr]{%
 187.9	2.59368\\
 191.6	2.7104\\

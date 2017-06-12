@@ -1,4 +1,4 @@
-%% Creator: Inkscape 0.91_64bit, www.inkscape.org
+%% Creator: Inkscape inkscape 0.92.1, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
 %% Accompanies image file '2deg_bandgap.pdf' (pdf, eps, ps)
 %%
@@ -20,7 +20,7 @@
 %%   \import{<path to file>}{<filename>.pdf_tex}
 %% Alternatively, one can specify
 %%   \graphicspath{{<path to file>/}}
-%% 
+%%
 %% For more information, please see info/svg-inkscape on CTAN:
 %%   http://tug.ctan.org/tex-archive/info/svg-inkscape
 %%
@@ -36,7 +36,7 @@
   }%
   \providecommand\rotatebox[2]{#2}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{362.85127563bp}%
+    \setlength{\unitlength}{362.85126732bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -50,9 +50,9 @@
   \makeatother%
   \begin{picture}(1,0.55754105)%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{2deg_bandgap.pdf}}%
-    \put(0.1420209,0.32893882){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{$E_c$}}}}%
-    \put(0.14202073,0.26938157){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{\textbf{$E_f$}}}}%
-    \put(0.00266325,0.02721174){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{$\mathrm{Al_{x}Ga_{1-x}As}$}}}}%
-    \put(0.41182434,0.0262991){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{$\mathrm{GaAs }$}}}}%
+    \put(0.14202073,0.32893882){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$E_c$}}}}%
+    \put(0.14202073,0.26938157){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$E_f$}}}}%
+    \put(0.00266325,0.02721174){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$\mathrm{Al_{x}Ga_{1-x}As}$}}}}%
+    \put(0.41182434,0.02721174){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$\mathrm{GaAs }$}}}}%
   \end{picture}%
 \endgroup%

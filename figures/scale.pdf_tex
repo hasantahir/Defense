@@ -53,13 +53,13 @@
     \put(0.03864415,0.21388436){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{1}{\MHz}}}}%
     \put(0.40218101,0.00042881){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Device Dimension}}}%
     \put(0.85182544,0.33152916){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Microwave}}}%
-    \put(0.85182544,0.4424093){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Terahertz}}}%
-    \put(0.85182544,0.53942943){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Optical}}}%
+    \put(0.85182544,0.4524093){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Terahertz}}}%
+    \put(0.85182544,0.56942943){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Optical}}}%
     \put(0.81453074,0.04963267){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\SI{1}{\mm}}}}%
-    \put(0.67468178,0.04963267){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\SI{.1}{\mm}}}}%
+    \put(0.67468178,0.04963267){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\SI[round-precision=1]{.1}{\mm}}}}%
     \put(0.55624721,0.04963267){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\SI{10}{\micm}}}}%
     \put(0.4428387,0.04963267){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\SI{1}{\micm}}}}%
-    \put(0.32678696,0.04963267){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\SI{.1}{\micm}}}}%
+    \put(0.32678696,0.04963267){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\SI[round-precision=1]{.1}{\micm}}}}%
     \put(0.19071513,0.04963267){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\SI{10}{\nm}}}}%
     \put(0.03864415,0.09992422){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\SI{1}{\kHz}}}}%
     \put(0.03864415,0.32630448){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{1}{\GHz}}}}%
@@ -70,5 +70,3 @@
     \put(0.22150774,0.23458902){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Electronics}}}%
   \end{picture}%
 \endgroup%
-
-\SI{1}{\micm}

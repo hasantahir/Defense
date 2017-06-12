@@ -1,4 +1,4 @@
-%% Creator: Inkscape 0.91_64bit, www.inkscape.org
+%% Creator: Inkscape inkscape 0.92.1, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
 %% Accompanies image file 'hemt.pdf' (pdf, eps, ps)
 %%
@@ -36,7 +36,7 @@
   }%
   \providecommand\rotatebox[2]{#2}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{220.44059787bp}%
+    \setlength{\unitlength}{220.43211163bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,17 +48,17 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.84864246)%
+  \begin{picture}(1,0.83223339)%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{hemt.pdf}}%
-    \put(0.4388849,0.80386849){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\small{Gate}}}}%
-    \put(0.02865567,0.78350787){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\small{Source}}}}%
-    \put(0.80537653,0.78275355){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\small{Drain}}}}%
-    \put(0.39062267,0.63872103){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\small{n-GaAs}}}}%
-    \put(0.36649156,0.49770482){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\small{n-AlGaAs}}}}%
-    \put(0.39062267,0.39363943){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\small{AlGaAs}}}}%
-    \put(0.42832754,0.32803284){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\small{GaAs}}}}%
-    \put(0.33783582,0.26921331){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\small{GaAs Buffer}}}}%
-    \put(0.28806532,0.17118054){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\small{GaAs Substrate}}}}%
-    \put(0.46301604,0.00904939){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\small{2DEG}}}}%
+    \put(0.45499331,0.80389937){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Gate}}}%
+    \put(0.02909309,0.78353797){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{Source}}}}%
+    \put(0.828734,0.78353797){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Drain}}}%
+    \put(0.42210015,0.63874556){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{n -GaAs}}}%
+    \put(0.40382134,0.49772394){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{n -AlGaAs}}}%
+    \put(0.43285622,0.39365455){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{AlGaAs}}}%
+    \put(0.45030331,0.33507952){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{GaAs}}}%
+    \put(0.38444916,0.27498914){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{GaAs Buffer}}}%
+    \put(0.35084465,0.16620556){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{GaAs Substrate}}}%
+    \put(0.4855987,0.01396928){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{2DEG}}}%
   \end{picture}%
 \endgroup%

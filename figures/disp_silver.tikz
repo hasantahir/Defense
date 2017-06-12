@@ -10,22 +10,18 @@
 \begin{tikzpicture}
 
 \begin{axis}[%
-width=4.521in,
-height=3.566in,
-at={(0.758in,0.481in)},
-scale only axis,
 xmin=2,
 xmax=70,
 xlabel={$k_x (\si{\per \micro \metre})$},
 ymin=100,
 ymax=1200,
 ylabel={$f (\si{\tera \hertz})$},
-x label style={at={(axis description cs:0.5,-0.05)},anchor=north},
-y label style={at={(axis description cs:-0.05,.5)}},
+x label style={at={(axis description cs:0.5,0.06)}},
+y label style={at={(axis description cs:0.15,.5)}},
 axis background/.style={fill=white},
 legend style={at={(0.97,0.03)}, anchor=south east, legend cell align=left, align=left, draw=white!15!black}
 ]
-\addplot [color=mycolor1, line width=1.4pt]
+\addplot [color=mycolor1, line width=1.2pt]
   table[row sep=crcr]{%
 3.11358114158068	100\\
 3.15741995001482	101.401401401401\\
@@ -1030,7 +1026,7 @@ legend style={at={(0.97,0.03)}, anchor=south east, legend cell align=left, align
 };
 \addlegendentry{$\Re \mathrm{k_x}$}
 
-\addplot [color=mycolor2, dotted, line width=1.4pt]
+\addplot [color=mycolor2, dotted, line width=1.2pt]
   table[row sep=crcr]{%
 0.000521494859092909	100\\
 0.000536455496369973	101.401401401401\\
