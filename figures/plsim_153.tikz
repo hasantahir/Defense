@@ -4,6 +4,8 @@
         axis equal image,
         axis on top,
         xlabel=$x~(\mathrm{nm})$,
+        x label style={at={(axis description cs:0.5,0.09)}},
+y label style={at={(axis description cs:0.19,.5)}},
     ]
         \addplot graphics [
             xmin=0,

@@ -13,15 +13,16 @@
 \begin{axis}[%
 xmin=0.7,
 xmax=1.3,
-xlabel style={font=\color{white!15!black}},
 xlabel={$x~(\SI{}{\micm})$},
 ymin=0.05,
 ymax=1.4,
-ylabel style={font=\color{white!15!black}},
+    ylabel={$|E/E_{\rm{max}}|^2 $},
+x label style={at={(axis description cs:0.5,0.09)}},
+y label style={at={(axis description cs:0.19,.5)}},
 axis background/.style={fill=white},
 legend style={legend cell align=left, align=left, draw=white!15!black, at={(0.5,1.3)},anchor=north}
 ]
-\addplot [color=mycolor1, line width=1.4pt]
+\addplot [color=mycolor1, line width=1.0pt]
   table[row sep=crcr]{%
 0.499593654	0.853698218977972\\
 0.503433695	0.818709406387038\\
@@ -398,7 +399,7 @@ legend style={legend cell align=left, align=left, draw=white!15!black, at={(0.5,
 };
 \addlegendentry{$\E_{r1} = \SI[round-precision=2]{-.064}{}$}
 
-\addplot [color=mycolor2,line width=1.4pt]
+\addplot [color=mycolor2,line width=1.0pt]
   table[row sep=crcr]{%
 0.499593654	0.929562803465827\\
 0.50199368	0.946320760942988\\
@@ -881,7 +882,7 @@ legend style={legend cell align=left, align=left, draw=white!15!black, at={(0.5,
 };
 \addlegendentry{$\E_{r2} = \SI[round-precision=3]{-.131}{}$}
 
-\addplot [color=mycolor3, line width=1.4pt]
+\addplot [color=mycolor3, line width=1.0pt]
   table[row sep=crcr]{%
 0.499593654	0.56732102580769\\
 0.50199368	0.647143712393333\\

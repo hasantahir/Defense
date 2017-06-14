@@ -1,4 +1,4 @@
-%% Creator: Inkscape 0.91_64bit, www.inkscape.org
+%% Creator: Inkscape inkscape 0.92.1, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
 %% Accompanies image file 'mstruc_gated.pdf' (pdf, eps, ps)
 %%
@@ -36,7 +36,7 @@
   }%
   \providecommand\rotatebox[2]{#2}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{562.0415042bp}%
+    \setlength{\unitlength}{289.07769012bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,20 +48,20 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.47195394)%
+  \begin{picture}(1,0.47945656)%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{mstruc_gated.pdf}}%
-    \put(0.8330156,0.4318874){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{Barrier}}}}%
-    \put(0.8330156,0.35724627){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{2DEG}}}}%
-    \put(0.8330156,0.28271279){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{Substrate}}}}%
-    \put(0.16595164,0.16380889){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{S}}}}%
-    \put(0.81894502,0.16503828){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{D}}}}%
-    \put(0.49213327,0){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{\textit{L}}}}}%
-    \put(0.43668552,0.45815603){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{Objective Lens}}}}%
-    \put(0.01645767,0.18754256){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{\textit{I}}}}}%
-    \put(0.88412922,0.12051271){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{\textit{h}}}}}%
-    \put(0.20979868,0.26999869){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{\textit{z}}}}}%
-    \put(0.38305097,0.14860827){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{\textit{x}}}}}%
-    \put(0.49110578,0.08842445){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{G}}}}%
-    \put(0.06941025,0.10954001){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{\textit{d}}}}}%
+    \put(0.84539911,0.43560911){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{Barrier}}}}%
+    \put(0.84579436,0.36011046){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{2DEG}}}}%
+    \put(0.84606799,0.28455599){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{Substrate}}}}%
+    \put(0.1604657,0.16448063){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{S}}}}%
+    \put(0.82151877,0.16572406){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{D}}}}%
+    \put(0.49203289,0){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{L}}}}%
+    \put(0.42894947,0.46368711){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{Objective Lens}}}}%
+    \put(0.00606001,0.18848739){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{I}}}}%
+    \put(0.8879326,0.11977842){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{h}}}}%
+    \put(0.2054613,0.27607501){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{z}}}}%
+    \put(0.38473862,0.15135623){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{x}}}}%
+    \put(0.49094342,0.07038059){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{G}}}}%
+    \put(0.05790792,0.10941148){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{d}}}}%
   \end{picture}%
 \endgroup%

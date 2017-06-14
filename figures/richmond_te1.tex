@@ -10,10 +10,6 @@
 \begin{tikzpicture}
 
 \begin{axis}[%
-width=4.521in,
-height=3.566in,
-at={(0.758in,0.481in)},
-scale only axis,
 xmin=55,
 xmax=90,
 xlabel style={font=\color{white!15!black}},
@@ -22,7 +18,8 @@ ymode=log,
 ymin=0.001,
 ymax=10,
 yminorticks=true,
-ylabel style={font=\color{white!15!black}},
+        x label style={at={(axis description cs:0.5,0.09)}},
+y label style={at={(axis description cs:0.19,.5)}},
 ylabel={$RCS$},
 axis background/.style={fill=white},
 xmajorgrids,
@@ -30,7 +27,7 @@ ymajorgrids,
 yminorgrids,
 legend style={at={(0.03,0.97)}, anchor=north west, legend cell align=left, align=left, draw=white!15!black}
 ]
-\addplot [color=mycolor1, line width=2.0pt]
+\addplot [color=mycolor1, line width=1.2pt]
   table[row sep=crcr]{%
 0	0\\
 0.250696378830084	2.29637701527171e-06\\
@@ -395,7 +392,7 @@ legend style={at={(0.03,0.97)}, anchor=north west, legend cell align=left, align
 };
 \addlegendentry{Proposed Method TE}
 
-\addplot [color=mycolor2, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=gray, mycolor2}]
+\addplot [color=mycolor2, draw=none, mark size=1.5pt, mark=*, mark options={solid, fill=gray, mycolor2}]
   table[row sep=crcr]{%
 90	7.4\\
 87.5	7\\

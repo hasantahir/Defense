@@ -14,7 +14,8 @@
     minor grid style={line width=.1pt,draw=gray!30},
     xlabel=$x~(\mathrm{nm})$,
     ylabel=$y~(\mathrm{nm})$,
-    y label style={at={(0.1,0.5)}},
+x label style={at={(axis description cs:0.5,0.09)}},
+y label style={at={(axis description cs:0.19,.5)}},
     ]
     \addplot graphics [
     xmin=0,

@@ -11,19 +11,19 @@
 \begin{tikzpicture}
 
 \begin{axis}[
-xmin=1569124,
-xmax=27000000,
-xlabel style={font=\color{white!15!black}},
-xlabel={$k_x (\mathrm{rad~m}^{-1})$},
+xmin=1569124*1e-6,
+xmax=27000000*1e-6,
+xlabel={$k_x (\mathrm{rad~\mu m}^{-1})$},
 ymin=5,
 ymax=39,
-ylabel style={font=\color{white!15!black}},
+x label style={at={(axis description cs:0.5,0.09)}},
+y label style={at={(axis description cs:0.19,.5)}},
 ylabel={$f (\mathrm{THz})$},
 axis background/.style={fill=white},
-legend style={at={(0.97,0.03)}, anchor=south east, legend cell align=left, align=left, draw=white!15!black}
+legend style={at={(0.97,0.01)}, anchor=south east, legend cell align=left, align=left, draw=white!15!black}
 ]
-\addplot [color=mycolor1, line width=1.4pt]
-  table[row sep=crcr]{%
+\addplot [color=mycolor1, line width=1.2pt]
+  table[x expr=\thisrowno{0}*1e-6, y index=1, row sep=crcr]{%
 31836.3705875325	0.1\\
 79553.6038858673	0.250167224080268\\
 127167.314260406	0.400334448160535\\
@@ -327,8 +327,8 @@ legend style={at={(0.97,0.03)}, anchor=south east, legend cell align=left, align
 };
 \addlegendentry{$\Re k_x$}
 
-\addplot [color=mycolor2, dashdotted, line width=1.4pt]
-  table[row sep=crcr]{%
+\addplot [color=mycolor2, dashdotted, line width=1.2pt]
+  table[x expr=\thisrowno{0}*1e-6, y index=1, row sep=crcr]{%
 216.926185576685	0.1\\
 216.429132633822	0.250167224080268\\
 215.944069623634	0.400334448160535\\
@@ -632,8 +632,8 @@ legend style={at={(0.97,0.03)}, anchor=south east, legend cell align=left, align
 };
 \addlegendentry{$\Im k_x$}
 
-\addplot [color=mycolor3, dotted, line width=2.0pt]
-  table[row sep=crcr]{%
+\addplot [color=black, line width=1.0pt]
+  table[x expr=\thisrowno{0}*1e-6, y index=1, row sep=crcr]{%
 30000	0.1\\
 75050.1672240803	0.250167224080268\\
 120100.334448161	0.400334448160535\\
